@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수와 for문 이용해서 팩토리얼 계산하기</title>
+</head>
+<body>
+    <!-- <input type="text" id="n"> -->
+    <button onclick="num()">실행</button>
+
+    <script>  
+    function num(){ 
+        // var result = document.querySelector("#n").value;
+        var factorial = prompt("팩토리얼값을 입력하세요");
+        var fac = Number(factorial);
+        var result = 1; //방, 공간
+        for (var i = 1; i <= fac; i++) { //for문 안의 자료형은 number
+            result = result * i; //손코딩        
+        }
+        // return result;
+        document.write(fac+ "!=" + result);
+    }
+
+    
+
+    </script>
+</body>
+</html>
